@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular</title>
+
+    <style>
+        body{
+            background-color: aliceblue;
+
+        }
+
+        input{
+            width: 100px;
+
+        }
+
+        div#res{
+            margin-top: 20px;
+            color: blue;
+            background-color: rgb(151, 151, 151);
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+<h1>CALCULADORA DE RIOT</h1>
+<input type="number" name="caixa1" id="caixa1"> +
+<input type="number" name="caixa2" id="caixa2">
+<input type="button" value="send" onclick="somar()">
+<div id="res">Resultado</div>
+
+    <script>
+        function somar (){
+        var n1 = document.querySelector("input#caixa1")
+        var n2 = document.querySelector("input#caixa2")
+        var r = document.querySelector("div#res")    
+        var n11 = Number(n1.value)
+        var n22 = Number(n2.value)
+        var resposta = n11 + n22
+
+        r.innerHTML = `O resultado de ${n11} + ${n22} é igual a <strong>${resposta}</strong> `
+        
+
+        }
+
+
+    </script>
+
+
+</body>
+</html>

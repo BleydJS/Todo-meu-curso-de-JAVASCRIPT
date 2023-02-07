@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que pais vc é?</title>
+
+    <style>
+        body{
+            background-color: azure;
+        }
+
+        input{
+            margin-left: 40px;
+        }
+
+        div#p {
+            margin-left: 40px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Estrangeiro ou brasileiro?</h1>
+    <div id="p">Qual pais vc é?</div>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="ver()">
+    <div id="resultado"></div>
+
+        <script>
+            
+            
+            function ver(){
+                var pai = document.querySelector("input#pais")
+                var pais = String(pai.value)
+
+                if (pais == 'brasil'){ 
+                   resultado.innerHTML = `vc é br`
+
+                } else {
+                    resultado.innerHTML = `vc é gringo`
+                }
+
+            }
+    
+
+        </script>
+
+
+</body>
+</html>

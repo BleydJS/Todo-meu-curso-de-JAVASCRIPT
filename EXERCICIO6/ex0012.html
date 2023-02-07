@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sozinho</title>
+
+        <style>
+            body {
+                background-color: antiquewhite;
+            }
+            div#cal{
+                line-height: 50px;
+                color: blue;
+               /* font: bold 20px arial; */
+            }
+            div#mouse{
+                background-color: black;
+                color: white;
+                width: 200px;
+                height: 200px;
+                text-align: center;
+                line-height: 200px;
+
+            }
+
+        </style>
+
+</head>
+<body>
+    
+    <h1>CALCULAR DE QUE PAIS TU É</h1>
+    <p>De que pais vc é?</p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="clicar()" >
+    <div id="cal">Calculando..</div>
+    
+    <div id="mouse" 
+    onmouseenter="entrou()"
+    onmouseout="saiu()" 
+    onclick="clickK()">
+    MOUSEE
+    </div>
+
+
+           <script>
+                function clicar () {
+                var country = document.querySelector("input#pais")
+                var ct = String (country.value)
+
+                if(ct == "brasil" || ct == "BRASIL") {
+                   cal.innerHTML = "Tu é <strong>brasileiro</strong> irmão" 
+                } else {
+                    cal.innerHTML = "Tu é gringo"
+                }
+
+            }
+
+            
+            var mou = window.document.querySelector("div#mouse")
+
+
+            function entrou(){
+                mou.style.background = "red"
+            }
+
+            function saiu(){
+                mou.innerHTML = "MOUSEE"
+                mou.style.background = "black"
+
+            }    
+
+            function clickK(){
+                mou.innerHTML = "clicou"
+            }
+        </script>
+
+
+</body>
+</html>

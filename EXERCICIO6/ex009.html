@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+
+        <style>
+            body {
+                background-color: antiquewhite;
+                font: normal 15pt arial;
+            }
+
+            input {
+                width: 150px;
+            }
+
+        </style>
+
+
+</head>
+
+<body>
+    
+    <H1>SOMANDO VALORES</H1>
+    <input type="number" name="num1" id="num1"> +
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+        <script>
+            function somar(){
+            var n1 = document.querySelector('input#num1')
+            var n2 = document.querySelector('input#num2')
+            var res = document.querySelector('div#res')
+
+            var n11 = Number(n1.value)
+            var n22 = Number(n2.value)
+            var y = n11 + n22
+
+            res.innerHTML = `o Resultado de ${n11} + ${n22} é igual a <strong>${y}</strong>`
+            }
+        </script>
+
+
+
+</body>
+</html>

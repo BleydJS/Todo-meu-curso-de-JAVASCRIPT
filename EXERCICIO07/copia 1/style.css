@@ -1,0 +1,23 @@
+body {
+    background-color: aliceblue;
+}
+header{
+    text-align: center;
+}
+section {
+    background-color: aquamarine;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    font-style: italic;
+}
+
+div#horario{
+    font: 16px arial;
+
+}

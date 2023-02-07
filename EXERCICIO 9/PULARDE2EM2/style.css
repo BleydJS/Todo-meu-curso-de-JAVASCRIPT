@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(103, 221, 250);
+    color: white;
+    
+}
+
+header{
+    text-align: center;
+
+}
+section{
+background-color: white;
+width: 400px;
+text-align: left;
+border-radius: 10px;
+padding: 10px;
+margin: auto;
+color: black;
+font: bold 15px arial;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.116);
+}
+
+
+div#prep{
+    margin-top: 20px;
+
+}
+
+
+
+footer{
+    text-align: center;
+    font-style: italic;
+
+}
